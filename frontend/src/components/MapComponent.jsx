@@ -74,7 +74,8 @@ const MapComponent = ({ alerts, satelliteData, drones }) => {
                 const windSpeed = env.wind_speed || 15;
                 const windDir = env.wind_direction || "N";
 
-                const res = await fetch(`https://fire-detection-ai-based.onrender.com/api/fire-spread?lat=${selectedAlert.lat}&lng=${selectedAlert.lng}&wind_speed=${windSpeed}&wind_direction=${windDir}`);
+                const API_URL = import.meta.env.VITE_API_URL || 'https://fire-detection-ai-based.onrender.com/api';
+                const res = await fetch(`${API_URL}/fire-spread?lat=${selectedAlert.lat}&lng=${selectedAlert.lng}&wind_speed=${windSpeed}&wind_direction=${windDir}`);
                 const json = await res.json();
                 if (json.status === 'success') {
                     setPredictions(json.prediction);
