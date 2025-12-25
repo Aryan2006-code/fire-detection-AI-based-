@@ -7,7 +7,7 @@ app = FastAPI(title="AGNI-NET API", version="0.1.0")
 # CORS setup
 origins = [
     "http://localhost:5173", # Vite frontend
-    "http://localhost:3000",
+    "https://fire-detection-ai-based.onrender.com",
     "*"
 ]
 
