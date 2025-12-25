@@ -10,7 +10,7 @@ import AnalyticsPanel from './components/AnalyticsPanel';
 
 
 // Mock API URL - in production use env var
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const API_URL = https://fire-detection-ai-based.onrender.com/api;
 
 function App() {
   const [alerts, setAlerts] = useState([]);
