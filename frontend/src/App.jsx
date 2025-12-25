@@ -165,6 +165,10 @@ function App() {
 
         <div className="flex-1 p-6 z-10 overflow-hidden">
           {renderContent()}
+          {/* DEBUG BANNER - REMOVE LATER */}
+          <div className="absolute bottom-0 left-0 bg-red-600 text-white text-xs p-1 z-[9999]">
+            API: {API_URL}
+          </div>
         </div>
       </main>
     </div>
