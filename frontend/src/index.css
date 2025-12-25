@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Custom Scrollbar for Alerts Panel */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Leaflet Popup Customization */
+.glass-popup .leaflet-popup-content-wrapper {
+    background: rgba(15, 23, 42, 0.8) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    color: white !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+.glass-popup .leaflet-popup-tip {
+    background: rgba(15, 23, 42, 0.8) !important;
+}
+
+.glass-popup .leaflet-popup-close-button {
+    color: #94a3b8 !important;
+}
