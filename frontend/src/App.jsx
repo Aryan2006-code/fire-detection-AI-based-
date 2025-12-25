@@ -10,7 +10,10 @@ import AnalyticsPanel from './components/AnalyticsPanel';
 
 
 // Mock API URL - in production use env var
+<<<<<<< HEAD
 
+=======
+>>>>>>> a0a662ee2d6c667e798330d13ed390bc82a48e1e
 const API_URL = 'https://fire-detection-ai-based.onrender.com/api';
 
 function App() {
